@@ -1,0 +1,54 @@
+body {
+font-family: sans-serif;
+background-color: #f0f0f0; /* light grey background for starters, change later*/
+color: #333; /*Dark grey text*/
+margin: 0; /*remove default body margin*/
+padding: 0;
+}
+header {
+background-color: #007BFF; /*Blue header*/
+margin: 0; /*remove default body margin*/
+padding: 0;
+}
+main {
+padding: 20px;
+min-height: 80vh;
+}
+footer {
+background-color: #333;
+color: white;
+text-align: center;
+padding: 10px
+}
+h1 {
+font-size: 2em
+margin-bottom: 10px;
+}
+h2 {
+font-size: 1.5em;
+margin-bottom: 10px;
+}
+p {
+    margin-bottom: 1em;
+    }
+    ul {
+    margin-bottom: 1em;
+}
+/*styles for mobile devices*/
+@media (max-width: 768px) {
+body {
+padding 10px; /*adjusting padding for smaller screens*/
+}
+header {
+padding: 10px;
+}
+main {
+padding: 10px;
+}
+h1 {
+font-size: 1.75em;
+}
+h2 {
+font-size: 1.25em;
+}
+}
