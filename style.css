@@ -1,18 +1,40 @@
+/* General Body Styles */
 body {
     font-family: sans-serif;
-    margin: 20px;
-    background-color: #f4f4f4;
+    margin: 0; /* Adjusted margin */
+    background-color: #f8f5f0; /* Off-white/Cream */
+    color: #221f1f; /* Dark brown for text */
+    padding: 0;
 }
 
+/* Main Container Styles */
 .container {
     max-width: 800px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #fff; /* Keeping white for the container for now */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #e0dacd; /* Light Beige for header background */
+}
+
+header h1 {
+    color: #a0522d; /* Reddish-Brown for the main heading */
+    margin-bottom: 10px; /* Add some space below the title */
+}
+
+header p {
+    color: #8b4513; /* Medium Brown for the subtitle */
+    font-size: 0.9em; /* Slightly smaller font size */
+}
+
+/* Paws-Venture Grid Styles */
 .paws-venture-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -20,15 +42,21 @@ body {
     margin-top: 20px;
 }
 
+/* Individual Paws-Venture Item Styles */
 .paws-venture-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: #333;
+    color: #333; /* Default link color */
     border: 1px solid #ddd;
     border-radius: 4px;
     overflow: hidden;
+    transition: transform 0.3s ease-in-out; /* Add a subtle hover effect */
+}
+
+.paws-venture-item:hover {
+    transform: scale(1.05);
 }
 
 .paws-venture-item img {
@@ -40,9 +68,10 @@ body {
 .paws-venture-item span {
     padding: 10px;
     text-align: center;
+    background-color: #f9f9f9; /* Light background for the text */
 }
 
-/* Basic styling for individual paws-venture pages */
+/* Basic styling for individual paws-venture pages (Gallery) */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
